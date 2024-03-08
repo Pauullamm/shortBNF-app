@@ -20,14 +20,14 @@ export default function Searchbar(props) {
         setSearchTerm(event.target.value);
     }
     return (
-        <div className="search-bar content-center">
-            <div>
+        <div className="search-bar ">
+            <div className="flex justify-center">
             <input
                 type="text"
                 placeholder="Search Drug..."
                 value={searchTerm}
                 onChange={handleSearchChange}
-                className="search-input my-5 rounded-md py-1 pl-1 border-2 border-gray-300" 
+                className="search-input my-5 rounded-md py-1 pl-1 border-2 border-gray-300 " 
                 />
             </div>
             

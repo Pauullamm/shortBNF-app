@@ -23,5 +23,5 @@
 
 .dropdown-content.open {
     opacity: 1;
-    max-height: 200px; /* Adjust as needed */
+    max-height: 400px; /* Adjust as needed */
 }

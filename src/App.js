@@ -35,12 +35,13 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <div className='my-6 flex justify-center'>
-        <h1 className='text-lg font-bold'>BNF...but just the important safety information</h1>
+      <div className='my-6 flex-col justify-center'>
+        <h1 className='tracking-tight text-2xl font-medium sm:text-5xl font-serif flex justify-center'>British National Formulary (BNF)</h1>
+        <h1 className='font-sans text-xl flex justify-center'>...but it's just the important safety information</h1>
       </div>
       
       <div className='info-handler'>
-        <div className='w-1/2'>
+        <div className='w-3/4 flex justify-center'>
           <Searchbar components={objData}/>
         </div>
         

@@ -22,7 +22,7 @@ export default function Dropdown(props) {
             </button>
             
             <ul className={`dropdown-content ${isOpen ? 'open' : ''}`}>
-                <li className='text-gray-700 block px-4 py-2 text-sm'>{content}</li>
+                <li className='text-gray-700 block px-4 py-2 text-m'>{content}</li>
             </ul>
         </div>
         
