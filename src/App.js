@@ -3,10 +3,25 @@ import './App.css';
 import Searchbar from './components/Searchbar';
 
 const apiURL = process.env.REACT_APP_API_URL
+/**
+ * @description Initializes state and fetches data from an API, displaying a header
+ * and a searchbar component with the retrieved data. It catches any errors during
+ * the data fetching process and logs them to the console. The searchbar is populated
+ * using the fetched data.
+ *
+ * @returns {JSX.Element} A virtual representation of the UI components that will be
+ * rendered on the screen. It defines the structure and layout of a web page with
+ * several elements including headings, divs, and a searchbar component.
+ */
 function App() {
 
   const [objData, setObjData] = useState([])
   
+  /**
+   * @description Fetches drug information from an API, checks for HTTP errors, and
+   * updates local state with the received JSON data if successful, logging any encountered
+   * errors to the console instead.
+   */
   async function get_drug_info() {
     const get_options = {
       method: "GET",
@@ -31,6 +46,7 @@ function App() {
   }
 
   useEffect(() => {
+    // Executes once on component mount.
     get_drug_info()
   }, [])
   return (
